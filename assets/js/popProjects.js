@@ -70,7 +70,7 @@ function populateProjects() {
             </div>
           </div>
           <!--card end-->`;
-    parentElement.insertAdjacentHTML("afterend", markup);
+    parentElement.insertAdjacentHTML("afterbegin", markup);
     clearArrUsedTech();
   });
 }

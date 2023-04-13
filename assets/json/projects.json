@@ -7,6 +7,24 @@
     "infoHandle": "project-1.html",
     "link": "https://www.npi.rs",
     "bgImage": "./assets/img/projects/project_1.png"
+  },
+  {
+    "id": "2",
+    "title": "My First Portfolio",
+    "description": "My first portfolio. Done from the free template, heavily modified, but still credited. Made with lots of love.",
+    "usedTech": ["html", "css", "bootstrap", "sass", "javascript"],
+    "infoHandle": "project-2.html",
+    "link": "https://dambus.github.io/port5.1/",
+    "bgImage": "./assets/img/projects/project_2.png"
+  },
+  {
+    "id": "3",
+    "title": "Forkify App",
+    "description": "Vanilla javascript app displaying food recipes from dedicated API",
+    "usedTech": ["html", "css", "bootstrap", "sass", "javascript"],
+    "infoHandle": "project-3.html",
+    "link": "https://dambus.github.io/port5.1/",
+    "bgImage": "./assets/img/projects/project_5.png"
   } 
 ]
   
