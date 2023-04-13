@@ -1,0 +1,12 @@
+ [
+  {
+    "id": "1",
+    "title": "Neopetrol Inzenjering",
+    "description": "Company presentation, written from scratch. Implemented live search option for list of projects, company profile pdf on 4 languages available for viewing or download",
+    "usedTech": ["html", "css", "bootstrap", "sass", "javascript"],
+    "infoHandle": "project-1.html",
+    "link": "https://www.npi.rs",
+    "bgImage": "./assets/img/projects/project_1.png"
+  } 
+]
+  

@@ -1,0 +1,66 @@
+%btn {
+  background-color: none;
+  color: $gunmetal;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.2s;
+  margin-right: 1rem;
+
+  &:hover {
+    // transform: scale(1.05);
+    background: $light-cyan;
+    color: $gunmetal;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  & > *:first-child {
+    margin-right: 1rem;
+  }
+}
+
+.btn {
+  @extend %btn;
+
+  padding: 1.5rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn--small {
+  &,
+  &:link,
+  &:visited {
+    @extend %btn;
+
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 0.8125rem;
+    border-radius: 6px;
+    @include md {
+      padding: 1rem;
+      padding: 1rem 2.25rem;
+      border-radius: 8px;
+    }
+    text-decoration: none;
+  }
+  &:hover {
+    transform: rotate(-2deg);
+    transition: transform 0.2s ease;
+    transition-delay: 0.1s;
+  }
+}
+
+.btn-row {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  @include md {
+    justify-content: start;
+  }
+  align-items: center;
+}

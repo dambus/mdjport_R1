@@ -1,0 +1,38 @@
+.hidden {
+  display: none;
+  transition: 0.5s;
+}
+
+.no-opacity {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.from-right {
+  transform: translateX(-300px);
+  transition: 0.5s;
+}
+
+.sticky {
+  @include md {
+    position: sticky;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.active {
+  background-color: none;
+  color: $ash-gray;
+  transform: rotate(-2deg);
+  &::before {
+    border: 1px solid $ash-gray;
+    transform: rotate(-2deg);
+    // background-color: $light-cyan;
+    border-radius: 6px;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+}

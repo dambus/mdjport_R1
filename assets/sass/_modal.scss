@@ -1,0 +1,39 @@
+.modal,
+.modal-dialog,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+  // height: calc(100vh - 2rem);
+  // background-color: rgba(black, 0.5);
+  color: $gunmetal;
+  font-size: 1rem;
+}
+
+.modal-dialog,
+.modal-content {
+  min-height: calc(100vh - 2rem);
+  @include md {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.modal-header {
+  .btn-close {
+    color: $light-cyan;
+    background-color: $light-cyan;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+  }
+  border-bottom: none;
+}
+.modal-content {
+  border-bottom: none;
+  border: 1px solid white;
+}
+
+.modal-footer {
+  border: none;
+}

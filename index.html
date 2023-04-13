@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      type="module"
+      src="https://kit.fontawesome.com/c9219fe591.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/popProjects.js"></script>
+
+    <title>milan djumic::portfolio</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="projectsModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" id="modalContent">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              id="closeModal"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button href="#" class="btn--small" data-bs-dismiss="modal">
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mobile-nav-items hidden no-opacity">
+      <img
+        src="./assets/img/mdjlogo.png"
+        alt=""
+        class="mobile-nav-items--logo"
+      />
+      <a href="#welcome" class="mobile-nav-items--item no-opacity"
+        ><i class="fa-solid fa-house mobile-nav-items--icon"></i>Home</a
+      >
+      <a href="#work" class="mobile-nav-items--item no-opacity"
+        ><i class="fa-solid fa-briefcase mobile-nav-items--icon"></i>Work</a
+      >
+      <a href="#skills" class="mobile-nav-items--item no-opacity"
+        ><i class="fa-solid fa-gear mobile-nav-items--icon"></i>Skills</a
+      >
+      <a href="#about" class="mobile-nav-items--item no-opacity"
+        ><i class="fa-solid fa-user mobile-nav-items--icon"></i>About</a
+      >
+    </div>
+    <div class="header container" id="top-of-page">
+      <img src="assets/img/mdjlogo.png" alt="logo" class="header__logo" />
+      <div class="nav__mobile container-fluid">
+        <div class="nav__mobile--menu-icon">
+          <div class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <a href="#welcome" class="btn__nav" data-anchor="#welcome">home</a>
+        <a href="#work" class="btn__nav" data-anchor="#work">work</a>
+        <a href="#skills" class="btn__nav" data-anchor="#skills">skills</a>
+        <a href="#about" class="btn__nav" data-anchor="#about">about</a>
+      </div>
+    </div>
+    <section id="welcome" class="welcome">
+      <div class="container-fluid container__heading">
+        <div class="row">
+          <div class="col-md-6 heading__image">
+            <div class="heading__image--container">
+              <img
+                src="./assets/img/undraw_code_thinking_re_gka2.svg"
+                alt="developer think about coding"
+                class="heading__image--image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 heading__title">
+            <h1 class="heading__title--title">
+              Some catchy title to get viewer's attention
+            </h1>
+            <h3 class="heading__title--subtitle">
+              Subtitle explaining title above
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center container__heading--btnHolder">
+            <a href="#work" class="container__heading--nextSection"
+              ><i class="fa-solid fa-chevron-down fa-beat-fade"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="work container">
+      <div class="section__heading">
+        <h1>my work.</h1>
+      </div>
+      <div class="section__content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum velit
+          quasi odio corrupti et pariatur quod, est aut dolore cumque voluptatem
+          nulla a maiores dignissimos consectetur officiis deserunt voluptates?
+          Magnam.
+        </p>
+        <div class="cards" id="projectCards"></div>
+        <!-- cards div end-->
+      </div>
+    </section>
+    <section id="skills" class="skills container">
+      <div class="section__heading">
+        <h1>skills.</h1>
+      </div>
+      <div class="section__content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          repellendus voluptas doloribus eligendi debitis blanditiis possimus
+          dicta quibusdam. Voluptatibus tempora vitae quae illo aliquam minima
+          earum excepturi maiores deleniti obcaecati.
+        </p>
+        <div class="skills__box">
+          <div class="skills__box--skill-icon">
+            <div class="badge_good"><i class="fa-solid fa-thumbs-up"></i></div>
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="skills__box--skill-icon">
+            <div class="badge_good"><i class="fa-solid fa-thumbs-up"></i></div>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="skills__box--skill-icon">
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <div class="skills__box--skill-icon">
+            <div class="badge_ok"><i class="fa-solid fa-circle-check"></i></div>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="skills__box--skill-icon">
+            <div class="badge_learning">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="skills__box--skill-icon">
+            <i class="fa-brands fa-figma"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about container">
+      <div class="section__heading">
+        <h1>about me.</h1>
+      </div>
+      <div class="section__content">
+        <div class="row g-5">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <img
+              src="./assets/img/undraw_code_thinking_re_gka2.svg"
+              alt="developer think about coding"
+              class="heading__image--image"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              vero nostrum atque dolorum dolores neque quos eligendi, expedita
+              error. Ut quas ab a cum cumque, numquam saepe illum accusantium
+              cupiditate accusamus voluptates excepturi error molestias
+              veritatis doloribus ullam assumenda suscipit consectetur. Animi
+              tempore ut repellat doloribus perferendis itaque temporibus vero
+              ullam debitis blanditiis, ducimus ratione. Perferendis quod eos
+              veritatis amet nisi numquam eveniet esse, animi quia nostrum fugit
+              veniam praesentium? Ipsam autem minima repellat corporis, adipisci
+              nulla a dolores voluptatum. Saepe enim laborum minima esse vero.
+              Ab delectus iste harum earum? Accusantium hic laborum eius facere
+              quo, facilis magnam deserunt!
+            </p>
+            <div class="col-12 mt-5 btn-row">
+              <button href="#" class="btn--small">more</button>
+              <button href="#" class="btn--small">blog</button>
+              <button href="#" class="btn--small">contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="test"></div>
+
+    <!-- Bootstrap CDN js -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="assets/js/modal.js"></script>
+  </body>
+</html>
