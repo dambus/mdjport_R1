@@ -1,38 +1,37 @@
 const modBtn = document.querySelectorAll(".mod-btn");
+const modalContent = document.getElementById("modalContent");
+const modalBody = modalContent.querySelector(".modal-body");
+const closeButton = document.querySelectorAll(".closeModal");
+
+const getData = function (link) {
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", link, true);
+  xhr.setRequestHeader("content-type", "text/html");
+  xhr.send();
+  xhr.onreadystatechange = function (e) {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      modalBody.innerHTML = this.responseText;
+    }
+  };
+};
+
+const projectsModal = new bootstrap.Modal("#projectsModal", {
+  keyboard: true,
+  backdrop: "static",
+});
+
+closeButton.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    projectsModal.toggle();
+  });
+});
 
 modBtn.forEach((element) => {
   element.addEventListener("click", function () {
     {
-      let projectsModal = new bootstrap.Modal("#projectsModal", {
-        keyboard: false,
-      });
-
-      // let modalWindow = document.getElementById("projectsModal");
-      let modalContent = document.getElementById("modalContent");
-      let modalBody = modalContent.querySelector(".modal-body");
-      console.log(modalBody);
-
       let link = element.getAttribute("data-mod-content");
-      console.log(link);
-
-      let xhr = new XMLHttpRequest();
-      xhr.open("GET", link, true);
-      xhr.setRequestHeader("content-type", "text/html");
-      xhr.send();
-      xhr.onreadystatechange = function (e) {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-          // textStream = xhr.responseText;
-          modalBody.innerHTML = this.responseText;
-        }
-      };
-
-      projectsModal.show();
-      let closeButton = document.querySelectorAll(".closeModal");
-      closeButton.forEach(function () {
-        this.addEventListener("click", function () {
-          projectsModal.hide();
-        });
-      });
+      getData(link);
+      projectsModal.toggle();
     }
   });
 });

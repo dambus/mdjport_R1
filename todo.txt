@@ -4,6 +4,7 @@ header
   navigation
     - sticky kada se dodje do sekcije work ✅
     - videti kako utice na naslov, iskombinovati 
+    
 
   navigation mobile
     - pronaci zanimljivu ikonicu za menu button ✅
@@ -23,9 +24,9 @@ SHOWCASE
   - ikonice za used tech ✅
   - UI za otvaranje showcase-a i stvarni link ✅
   - ubaciti slike
-  - napraviti modal za showcase
+  - napraviti modal za showcase ✅
     - content za svaki projekat
-      - istraziti da li praviti kao html za svaki projekat ili kao json pa ucitavati svaki posebno
+      - istraziti da li praviti kao html za svaki projekat ili kao json pa ucitavati svaki posebno ✅
 
 SKILLS
   - smisliti novi tekst

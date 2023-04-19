@@ -825,8 +825,14 @@ p.card-body {
 .modal-header,
 .modal-body,
 .modal-footer {
-  color: #202d3a;
+  background-color: #202d3a;
   font-size: 1rem;
+}
+
+.modal-body {
+  padding: 0;
+  outline: none;
+  border: none;
 }
 
 .modal-dialog,
@@ -854,11 +860,55 @@ p.card-body {
 
 .modal-content {
   border-bottom: none;
-  border: 1px solid white;
 }
 
 .modal-footer {
   border: none;
+}
+
+.modal-body header img {
+  margin-bottom: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .modal-body header img {
+    max-height: 50vh;
+    max-width: 80%;
+    margin-left: 10%;
+    background-size: cover;
+  }
+}
+.modal-body .modal-wrap {
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .modal-body .modal-wrap {
+    margin: 0 auto;
+    margin-left: 10%;
+  }
+}
+.modal-body .modal-wrap h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .modal-body .modal-wrap h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+.modal-body .modal-wrap h5 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .modal-body .modal-wrap h5 {
+    margin-bottom: 0.4125rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

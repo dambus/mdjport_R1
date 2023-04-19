@@ -1,7 +1,4 @@
 import data from "../json/projects.json" assert { type: "json" };
-// import data from "json/projects.json";
-// import * as url from "../img/projects/project_1.png";
-// import image from "../img/projects/project_1.png";
 
 const techList = {
   html: "fa-brands fa-html5",
@@ -16,7 +13,6 @@ function populateProjects() {
   const parentElement = document.getElementById("projectCards");
   let projectData = [...data];
   const arrUsedTech = [];
-  // console.log(projectData);
 
   projectData.forEach(async function (project) {
     const popUsedTech = function () {
