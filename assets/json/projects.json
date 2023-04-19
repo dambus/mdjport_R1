@@ -25,6 +25,16 @@
     "infoHandle": "project-3.html",
     "link": "https://dambus.github.io/port5.1/",
     "bgImage": "./assets/img/projects/project_5.png"
+  },
+  {
+    "id": "4",
+    "title": "Food ordering app",
+    "description": "Small and simple app written in React, as practical excercise, part of the React course I'm attending",
+    "usedTech": ["html", "css", "bootstrap", "sass", "javascript", "react"],
+    "infoHandle": "project-4.html",
+    "link": "https://dambus.github.io/port5.1/",
+    "bgImage": "./assets/img/projects/project_3.png"
   } 
+
 ]
   
