@@ -884,8 +884,8 @@ p.card-body {
 }
 @media (min-width: 768px) {
   .modal-body .modal-wrap {
+    max-width: 80%;
     margin: 0 auto;
-    margin-left: 10%;
   }
 }
 .modal-body .modal-wrap h1 {
@@ -908,6 +908,26 @@ p.card-body {
 @media (min-width: 768px) {
   .modal-body .modal-wrap h5 {
     margin-bottom: 0.4125rem;
+  }
+}
+.modal-body .modal-wrap .usedTech {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  .modal-body .modal-wrap .usedTech {
+    justify-content: flex-start;
+  }
+}
+.modal-body .modal-wrap .usedTech i {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .modal-body .modal-wrap .usedTech i {
+    font-size: 3rem;
   }
 }
 

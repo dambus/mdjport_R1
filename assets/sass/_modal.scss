@@ -62,11 +62,11 @@
   }
 
   .modal-wrap {
+    // border: 1px solid white;
     padding: 1rem;
     @include md {
-      // max-width: 60%;
+      max-width: 80%;
       margin: 0 auto;
-      margin-left: 10%;
     }
     h1 {
       font-size: 4rem;
@@ -84,6 +84,22 @@
       margin-bottom: 1rem;
       @include md {
         margin-bottom: 0.4125rem;
+      }
+    }
+    .usedTech {
+      display: flex;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      justify-content: space-evenly;
+      @include md {
+        justify-content: flex-start;
+      }
+      i {
+        font-size: 2rem;
+        opacity: 0.5;
+        @include md {
+          font-size: 3rem;
+        }
       }
     }
   }
