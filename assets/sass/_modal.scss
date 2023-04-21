@@ -6,7 +6,7 @@
 .modal-footer {
   // height: calc(100vh - 2rem);
   // background-color: rgba(black, 0.5);
-  background-color: $gunmetal;
+  // background-color: $gunmetal;
   font-size: 1rem;
 }
 
@@ -14,6 +14,7 @@
   padding: 0;
   outline: none;
   border: none;
+  background-color: $gunmetal;
 }
 
 .modal-dialog,
@@ -42,6 +43,7 @@
 
 .modal-footer {
   border: none;
+  background-color: $gunmetal;
 }
 
 .modal-body {

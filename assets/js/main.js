@@ -1,7 +1,5 @@
 "use strict";
 
-// const { entries } = require("lodash");
-
 const mobileMenuToggle = document.querySelector(".toggle-menu");
 const mobileNavItems = document.querySelector(".mobile-nav-items");
 const mobileNavItem = document.querySelectorAll(".mobile-nav-items--item");
