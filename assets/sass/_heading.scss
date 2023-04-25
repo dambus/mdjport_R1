@@ -39,19 +39,30 @@
   }
 
   &--image {
-    max-width: 80%;
+    width: 100%;
+    // max-width: 80%;
     // border: 1px solid rgba($ash-gray, 0.25);
-    border-radius: 12px;
+    border-radius: none;
+    // border-radius: 25%;
     @include md {
       max-width: 100%;
       border: none;
-      border-radius: 0;
+      border-radius: 25%;
+    }
+  }
+  .moded {
+    width: 95vw;
+    // overflow: hidden;
+    background-image: url("../img/mdjumic_pic.JPG");
+    background-size: cover;
+    border-radius: none !important;
+    @include md {
+      width: 50%;
     }
   }
 }
 
 .heading__title {
-  // border: 1px solid red;
   display: block;
   @include md {
     display: flex;
@@ -62,7 +73,6 @@
   &--title {
     text-align: center;
     width: 80%;
-    margin: 0 auto;
     font-size: 2rem;
     @include md {
       font-size: clamp(2rem, 1.6667rem + 0.6944vw, 2.5rem);
@@ -70,6 +80,18 @@
       text-align: start;
       flex-wrap: nowrap;
       width: 100%;
+    }
+    &--moded {
+      margin-top: -10rem;
+      background-color: $tiffany-blue;
+      color: $gunmetal;
+      border-radius: 6px;
+      text-align: center;
+      padding: 1rem;
+      @include md {
+        margin-top: none;
+        background-color: none;
+      }
     }
   }
 

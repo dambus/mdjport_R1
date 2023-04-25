@@ -430,14 +430,25 @@ img.mobile-nav-items--logo {
   justify-content: center;
 }
 .heading__image--image {
-  max-width: 80%;
-  border-radius: 12px;
+  width: 100%;
+  border-radius: none;
 }
 @media (min-width: 768px) {
   .heading__image--image {
     max-width: 100%;
     border: none;
-    border-radius: 0;
+    border-radius: 25%;
+  }
+}
+.heading__image .moded {
+  width: 95vw;
+  background-image: url("../img/mdjumic_pic.JPG");
+  background-size: cover;
+  border-radius: none !important;
+}
+@media (min-width: 768px) {
+  .heading__image .moded {
+    width: 50%;
   }
 }
 
@@ -455,7 +466,6 @@ img.mobile-nav-items--logo {
 .heading__title--title {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
   font-size: 2rem;
 }
 @media (min-width: 768px) {
@@ -465,6 +475,20 @@ img.mobile-nav-items--logo {
     text-align: start;
     flex-wrap: nowrap;
     width: 100%;
+  }
+}
+.heading__title--title--moded {
+  margin-top: -10rem;
+  background-color: #94d1be;
+  color: #202d3a;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .heading__title--title--moded {
+    margin-top: none;
+    background-color: none;
   }
 }
 .heading__title--subtitle {
